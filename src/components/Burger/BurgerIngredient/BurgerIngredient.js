@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import classes from "./BurgerIngredient.css";
 import PropTypes from "prop-types";
 
-class BurgerIngredient {
+class BurgerIngredient extends Component {
 
 
   render() {
@@ -34,9 +34,9 @@ class BurgerIngredient {
         break;
       default:
         ingredient = null;
-
-        return ingredient;
     }
+    return ingredient;
+
   }
 };
 
